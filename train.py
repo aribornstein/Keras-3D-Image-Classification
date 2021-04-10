@@ -31,6 +31,10 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 
+# Just disables the warning, doesn't take advantage of AVX/FMA to run faster
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
+
 """
 ## Loading data and preprocessing
 The files are provided in Nifti format with the extension .nii. To read the
