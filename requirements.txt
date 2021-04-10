@@ -1,4 +1,4 @@
-tensorflow==2.2.0
+tensorflow-gpu==2.2.0
 requests
 pathlib
 nibabel
