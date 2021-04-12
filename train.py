@@ -245,6 +245,11 @@ if __name__ == '__main__':
     """
     Let's read the paths of the CT scans from the class directories.
     """
+    tf.config.experimental.list_physical_devices('GPU')
+
+    from tensorflow.python.client import device_lib
+    print("look here rick!!!")
+    print(device_lib.list_local_devices())
 
     # Folder "CT-0" consist of CT scans having normal lung tissue,
     # no CT-signs of viral pneumonia.
