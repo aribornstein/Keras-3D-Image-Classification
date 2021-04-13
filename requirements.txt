@@ -1,4 +1,3 @@
 requests
 pathlib
 nibabel
-tensorflow==2.2.0
