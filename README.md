@@ -1,4 +1,4 @@
-# Keras3D Image Classifcation with TensorBoard Logging 
+# Keras3D Image Classification with TensorBoard Logging 
 
 ![3D Brain Scan Segments](https://keras.io/img/examples/vision/3D_image_classification/3D_image_classification_19_0.png)
 
