@@ -31,9 +31,6 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 
-# Just disables the warning, doesn't take advantage of AVX/FMA to run faster
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-
 
 """
 ## Loading data and preprocessing
@@ -248,7 +245,6 @@ if __name__ == '__main__':
     tf.config.experimental.list_physical_devices('GPU')
 
     from tensorflow.python.client import device_lib
-    print("look here rick!!!")
     print(device_lib.list_local_devices())
 
     # Folder "CT-0" consist of CT scans having normal lung tissue,
